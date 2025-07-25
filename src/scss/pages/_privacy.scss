@@ -1,0 +1,38 @@
+.privacy-section{
+    .privacy-links{
+        top: 242px;
+        ul{
+            li{
+                a{
+                    img{
+                        height: 12px;
+                        opacity: 0;
+                        left: -15px;
+                    }
+                }
+                &.active{
+                    a{
+                        opacity: 100% !important;
+                        padding-left: 15px;
+                        img{
+                            opacity: 1;
+                            left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .single-content{
+        padding-top: 40px;
+        border-bottom: 1px dashed $color-707070;
+        &:last-child{
+            border: none;
+        }
+        &:first-child{
+            @include media-breakpoint-up(lg){
+                padding-top: 0px !important;
+            }
+        }
+    }
+}

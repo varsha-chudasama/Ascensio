@@ -1,0 +1,158 @@
+.header{
+    z-index: 999;
+    .top-header{
+        .top-header-btn{
+            padding: 6px 30px;
+            border: 1px solid $white;
+        }
+    }
+    .header-section{
+        .header-logo{
+            height: 24px;
+            .black-logo{
+                display: none;
+            }
+        }
+        .nav{
+            .navigation{
+                .menu-item{
+                    margin-right: 40px;
+                    &:last-child{
+                        margin-right: 0px !important;
+                    }
+                    .menu-anchor{
+                        color: $white;
+                    }
+                    .menu-a{
+                        color: $white;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -26px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-left: 15px solid transparent;
+                            border-right: 15px solid transparent;
+                            border-bottom: 15px solid #ffffff;
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                    .mega-menu{
+                        height: 0px;
+                        opacity: 0;
+                        visibility: hidden;
+                        .mega-menu-container{
+                            padding: 22px 20px 22px 32px;
+                            .menu-link-group{
+                                .menu-link-container{
+                                    border-top: 1px solid rgba($color: $color-051721, $alpha: 0.16);
+                                    &:last-child{
+                                        border-bottom: 1px solid rgba($color: $color-051721, $alpha: 0.16);
+                                    }
+                                    .menu-link{
+                                        &:hover{
+                                            opacity: 100% !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header-icon{
+            height: 44px;
+            width: 44px;
+            background-color: $color-F9FAF4;
+            margin-right: 13px;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+
+    &.header-active{
+          .nav{
+            .navigation{
+                .menu-item{
+                    .mega-menu{
+                        &.mega-menu-open{ 
+                            height: fit-content;
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                    &.menu-active{
+                        .menu-a{
+                            &::after{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.dark-header{
+        .header-section{
+            .header-logo{
+                height: 24px;
+                .black-logo{
+                    display: block;
+                }
+                .white-logo{
+                    display: none;
+                }
+            }
+             .nav{
+                .navigation{
+                    .menu-item{
+                        .menu-anchor{
+                            color: $color-051721;
+                        }
+                    }
+                }
+            }
+
+            .header-icon{
+                background-color: $color-051721;
+                img{
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+    &.hidden {
+        transform: translateY(-200px);
+    }
+
+    &.header-fixed-os {
+        transform: translateY(0px);
+    }
+
+    &.header-fixed {
+        background-color: $color-051721;
+    }
+    &.header-fixed.dark-header {
+        background-color: $color-F9FAF4;
+    }
+}
+
+body{
+    &.header-active-bg{
+        position: relative;
+        &::after{
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: rgba($color: $black, $alpha: 0.31);
+            backdrop-filter: blur(6px);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

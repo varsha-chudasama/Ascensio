@@ -1,0 +1,51 @@
+.home-hero-section{
+    .home-hero-image{
+        height: 535px;
+    }
+}
+
+.sub-hero-section{
+    height: 481px;
+}
+
+.logo-slider-section{
+    .logo-slider{
+        .logo-slider-image{
+            height: 45px;
+        }
+    }
+}
+
+.left-right-section{
+    .left-image{
+        height: 541px;
+    }
+    .watch-btn{
+        padding: 9px 30px;
+        img{
+            height: 11px;
+        }
+    }
+}
+
+.full-banner-section{
+    .full-banner-img{
+        height: 595px;
+        width: 427px;
+        transform: translateY(140px);
+    }
+}
+
+.testimonial-banner-slider-section{
+    height: 625px;
+    .testimonial-controls{
+        .testimonial-prev-arrow{
+            margin-right: 15px;
+        }
+        .testimonial-prev-arrow,
+        .testimonial-next-arrow{
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.footer{
+    .social-icons{
+        .social-icon{
+            height: 18px;
+        }
+    }
+    .footer-logo{
+        height: 115px;
+    }
+    .footer-link{
+        &:last-child{
+            margin-bottom: 0px !important;
+        }
+    }
+    .footer-input{
+        height: 51px;
+        border: 1px solid rgba($color: $white, $alpha: 0.25);
+        background-color: transparent;
+        padding: 0px 30px;
+        &::placeholder{
+            font-family: "figtree-regular";
+            font-size: $font14;
+            line-height: $leading23;
+            color: $white;
+        }
+    }
+}

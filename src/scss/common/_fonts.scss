@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "figtree-bold";
+    src: url('../../../public/assets/fonts/figtree-bold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: "figtree-medium";
+    src: url('../../../public/assets/fonts/figtree-medium.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: "figtree-regular";
+    src: url('../../../public/assets/fonts/figtree-regular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: "figtree-semiBold";
+    src: url('../../../public/assets/fonts/figtree-semiBold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: "montserrat-regular";
+    src: url('../../../public/assets/fonts/montserrat-regular.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: "montserrat-semiBold";
+    src: url('../../../public/assets/fonts/montserrat-semiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+.fig-normal{
+    font-family: "figtree-regular";
+}
+
+.fig-medium{
+    font-family: "figtree-medium";
+}
+
+.fig-bold{
+    font-family: "figtree-bold";
+}
+
+.fig-semibold{
+    font-family: "figtree-semiBold";
+}
+    
+.mon-semibold{
+    font-family: "montserrat-semiBold";
+}
+
+.mon-normal{
+     font-family: "montserrat-regular";
+}

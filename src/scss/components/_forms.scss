@@ -1,0 +1,91 @@
+.contact-form{
+    .input{
+        height: 51px;
+        background-color: $color-E8657B;
+        padding: 0px 25px;
+        &::placeholder{
+            font-family: "figtree-regular";
+            font-size: $font14;
+            line-height: $leading23;
+            color: $white;
+        }
+    }
+    .textarea{
+        background-color: $color-E8657B;
+        padding: 25px 25px 0px;
+        &::placeholder{
+            font-family: "figtree-regular";
+            font-size: $font14;
+            line-height: $leading23;
+            color: $white;
+        }
+    }
+}
+
+.select2-container {
+    width: 100% !important;
+    .select2-selection--single[aria-expanded="true"] {
+        border-radius: 20px;
+        border-bottom: 0 !important;
+        .select2-selection__arrow {
+            transform: rotate(180deg);
+            transition: all 0.3s ease-in-out;
+            top: 2px;
+        }
+    }
+    .select2-selection--single {
+        height: 51px !important;
+        border-radius: 200px;
+        border: 1px solid rgba($color: $black, $alpha: 0.25);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .select2-selection__rendered {
+            font-family: "figtree-bold";
+            font-size: $font16;
+            line-height: 51px;
+            color: $color-051721;
+            padding: 0px 30px;
+            .select2-selection__placeholder {
+               font-family: "figtree-bold";
+                font-size: $font16;
+                line-height: 51px;
+                color: $color-051721;
+            }
+        }
+        .select2-selection__arrow {
+            height: 100%;
+            width: 20px;
+            background-image: url('../../../public/assets/icons/select.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-left: 10px;
+            top: -2px;
+            right: 15px;
+            b {
+                display: none !important;
+            }
+        }
+    }
+}
+.categories-select2 {
+    background-color: $white !important;
+    border: 1px solid #EEEEEF;
+    overflow: hidden;
+    border: 1px solid rgba($color: $black, $alpha: 0.25);
+    border-radius: 20px;
+        ul {
+            width:100%;
+            li {
+                padding: 10px 24px !important;
+                font-family: "figtree-bold";
+                font-size: $font16;
+                line-height: 20px;
+                color: $color-051721;
+            }
+        }
+    .select2-results__option--highlighted {
+        background-color: rgba($color: $color-051721, $alpha: 0.40) !important;
+        color: $black !important;
+    }
+}

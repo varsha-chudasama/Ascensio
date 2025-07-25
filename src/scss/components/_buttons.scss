@@ -1,0 +1,99 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+.btnA{
+    height: 50px;
+    border-radius: $radius60;
+    padding: 0px 35px;
+
+    &.bg-D3EA42-btn{
+        background-color: $color-D3EA42;
+        border: 1px solid $color-D3EA42;
+        color: $color-051721;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color-D3EA42;
+            color: $white;
+        }
+    }
+
+    &.bg-FC6E86-btn{
+        background-color: $color-FC6E86;
+        border: 1px solid $color-FC6E86;
+        color: $color-051721;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color-FC6E86;
+            color: $white;
+        }
+    }
+
+    &.bg-light-FC6E86-btn{
+        background-color: $color-FC6E86;
+        border: 1px solid $color-FC6E86;
+        color: $color-051721;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color-FC6E86;
+            color: $color-051721;
+        }
+    }
+
+    &.bg-dark-FC6E86-btn{
+        background-color: $color-FC6E86;
+        border: 1px solid $color-FC6E86;
+        color: $white;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color-FC6E86;
+        }
+    }
+
+    &.bg-FC6E86-white-btn{
+        background-color: $color-FC6E86;
+        border: 1px solid $color-FC6E86;
+        color: $white;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color-FC6E86;
+            color: $color-051721;
+        }
+    }
+
+    &.bg-white-btn{
+        background-color: $white;
+        border: 1px solid $white;
+        color: $color-051721;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $white;
+            color: $white;
+        }
+    }
+    &.border-051721-btn{
+        border: 1px solid $color-051721;
+        color: $color-051721;
+        &:hover{
+            background-color: $color-051721;
+            border: 1px solid $color-051721;
+            color: $white;
+        }
+    }
+    &.bg-051721-btn{
+        padding: 0px 70px;
+        background-color: $color-051721;
+        border: 1px solid $color-051721;
+        color: $color-051721;
+        &:hover{
+            background-color: $color-051721;
+            border: 1px solid $color-051721;
+            color: $white;
+        }
+    }
+}

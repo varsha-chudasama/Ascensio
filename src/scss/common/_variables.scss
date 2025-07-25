@@ -1,0 +1,169 @@
+/*******************************************************************************
+******************************* COLOUR VARIABLES *******************************
+*******************************************************************************/
+$color-D3EA42: #D3EA42;
+$color-051721: #051721;
+$color-F9FAF4: #F9FAF4;
+$color-FC6E86: #FC6E86;
+$color-FC9725: #FC9725;
+$color-0580BE: #0580BE;
+$color-EAEAEA: #EAEAEA;
+$color-363636: #363636;
+$color-707070: #707070;
+$color-E8657B: #E8657B;
+$color-F8F8F2: #F8F8F2;
+$color-F9FAF5: #F9FAF5;
+
+/*******************************************************************************
+******************************* FONTS VARIABLES *******************************
+*******************************************************************************/
+
+$font12 : 12px;
+$font14 : 14px;
+$font15 : 15px;
+$font16 : 16px;
+$font18 : 18px;
+$font20 : 20px;
+$font25 : 25px;
+$font27 : 27px;
+$font29 : 29px;
+$font34 : 34px;
+$font37 : 37px;
+$font44 : 44px;
+$font63 : 63px;
+
+/*******************************************************************************
+******************************* LINE HEIGHT *******************************
+*******************************************************************************/
+
+$leading17: 17px;
+$leading20: 20px;
+$leading23: 23px;
+$leading26: 26px;
+$leading30: 30px;
+$leading33: 33px;
+$leading35: 35px;
+$leading40: 40px;
+$leading44: 44px;
+$leading48: 48px;
+$leading61: 61px;
+
+/*******************************************************************************
+******************************* LETTER SPACING *******************************
+*******************************************************************************/
+
+$space0_17 : 0.17px;
+$space-0_2 : -0.2px;
+$space-0_14 : -0.14px;
+$space-0_16 : -0.16px;
+$space-0_18 : -0.18px;
+$space-0_34 : -0.34px;
+$space-0_63 : -0.63px;
+
+/*******************************************************************************
+******************************* OPACITY ****************************
+*******************************************************************************/
+
+$opacity5: 5%;
+$opacity7: 7%;
+$opacity10: 10%;
+$opacity15: 15%;
+$opacity16: 16%;
+$opacity27: 27%;
+$opacity41: 41%;
+
+/*******************************************************************************
+******************************* RADIUS ****************************
+*******************************************************************************/
+
+$radius5: 5px;
+$radius7: 7px;
+$radius10: 10px;
+$radius20: 20px;
+$radius25: 25px;
+$radius30: 30px;
+$radius50: 50px;
+$radius60: 60px;
+
+/*******************************************************************************
+******************************* ANIMATION VARIABLES ****************************
+*******************************************************************************/
+
+@mixin generate-transition($name, $duration, $type) {
+  -webkit-transition: $name $duration $type;
+  /* Safari 4+ */
+  -moz-transition: $name $duration $type;
+  /* Fx 5+ */
+  -o-transition: $name $duration $type;
+  /* Opera 12+ */
+  transition: $name $duration $type;
+  /* IE 10+, Fx 29+ */
+}
+
+@mixin generate-animation-delay($seconds) {
+  -webkit-animation-delay: $seconds;
+  /* Safari 4+ */
+  -moz-animation-delay: $seconds;
+  /* Fx 5+ */
+  -o-animation-delay: $seconds;
+  /* Opera 12+ */
+  animation-delay: $seconds;
+  /* IE 10+, Fx 29+ */
+}
+
+@mixin generate-placeholder($color, $fontsize) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $fontsize;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: $color;
+    font-size: $fontsize;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color;
+    font-size: $fontsize;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $fontsize;
+  }
+}
+
+@mixin generate-scale-transition() {
+  -webkit-transform: scale(1.1);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.1);
+  /* Firefox */
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -o-transform: scale(1.1);
+  /* Opera */
+  transform: scale(1.1);
+}
+
+@mixin generate-transform($transform) {
+  -webkit-transform: $transform;
+  /* Safari and Chrome */
+  -moz-transform: $transform;
+  /* Firefox */
+  -ms-transform: $transform;
+  /* IE 9 */
+  -o-transform: $transform;
+  /* Opera */
+  transform: $transform;
+}
+
+@mixin generate-filter($filter) {
+  -webkit-filter: $filter;
+  filter: $filter;
+  -moz-filter: $filter;
+  -o-filter: $filter;
+}
+
+$enable-negative-margins: true;
