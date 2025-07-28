@@ -13,6 +13,9 @@
 
 .master-slider-card{
     padding: 15px 15px 30px;
+    @include media-breakpoint-down(lg){
+        padding: 8px 8px 30px;
+    }
     .master-slider-image{
         height: 278px;
         opacity: 1;
@@ -61,6 +64,12 @@
     &:last-child{
         border-bottom: 1px solid rgba($color: $color-051721, $alpha: 0.16);
     }
+    @include media-breakpoint-down(lg){
+        .left-right-card-arrow{
+            height: 36px;
+            width: 36px;
+        }
+    }
     .left-right-slider-card{
         padding: 15px 15px 30px;
         .left-right-slider-image{
@@ -91,6 +100,9 @@
                 height: 15px;
             }
         }
+        @include media-breakpoint-down(lg){
+            padding: 8px 8px 37px;
+        }
         &.white-plus-hover{
             .left-right-slider-image{
                 opacity: 0;
@@ -112,13 +124,20 @@
     }
 }
 
-.testimonial-banner{
+.testimonial-banner,
+.testimonial-cards{
     padding: 30px 30px 30px 50px;
+    @include media-breakpoint-down(lg){
+        padding: 16px 16px 44px;
+    }
     .quote-icon{
         height: 23px;
     }
     .testimonial-banner-image{
         height: 466px;
+        @include media-breakpoint-down(lg){
+            height: 268px;
+        }
     }
 }
 
@@ -148,6 +167,21 @@
         img{
             height: 18px;
         }
+    }
+    @include media-breakpoint-down(lg){
+        height: 345px;
+        .two-card-content{
+            padding: 0px 16px;
+        }
+        .two-card-arrow{
+            height: 48px;
+            width: 100%;
+            max-width: 48px;
+            img{
+                height: 11px;
+            }
+        }
+
     }
 }
 
@@ -195,17 +229,58 @@
     .btnA{
         padding: 0px 55px !important;
     }
+    @include media-breakpoint-down(lg){
+        padding: 8px 8px 30px;
+        .programme-card-content{
+            padding: 0px 8px;
+        }
+        .programme-card-img{
+            height: 278px;
+        }
+        .nav{
+            .nav-item{
+                .nav-link{
+                    padding: 0px 23px !important;
+                }
+            }
+        }
+        .tab-content{
+            border-bottom: 1px solid rgba($color: $color-F9FAF5, $alpha: 0.40);
+        }
+        .btnA{
+            padding: 0px 55px !important;
+        }
+
+    }
 }
 
 .header-cards{
     height: 400px;
+    @include media-breakpoint-down(lg){
+        height: 345px;
+    }
     .header-card-arrow{
         height: 64px;
         width: 100%;
         max-width: 64px;
         max-height: 64px;
+        img{
+            height: 17px;
+        }
+        @include media-breakpoint-down(lg){
+            height: 48px;
+            width: 100%;
+            max-width: 48px;
+            max-height: 48px;
+            img{
+                height: 12px;
+            }
+        }
     }
     .header-cards-data{
         padding: 0px 30px 35px 30px;
+        @include media-breakpoint-down(lg){
+            padding: 0px 16px 25px 16px;
+        }
     }
 }

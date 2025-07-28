@@ -33,5 +33,17 @@
         .closet-content{
             display: none;
         }
+        @include media-breakpoint-down(lg){
+             .closet-header{
+                padding: 30px 0px;
+                .accordion-arrow{
+                    height: 36px;
+                    width: 36px;    
+                }
+                 &.active{
+                    padding-bottom: 25px !important; 
+                }
+            }
+        }
     }
 }

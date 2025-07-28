@@ -12,16 +12,24 @@
             .black-logo{
                 display: none;
             }
+            @include media-breakpoint-down(lg){
+                height: 20px;
+            }
         }
         .nav{
             .navigation{
                 .menu-item{
-                    margin-right: 40px;
-                    &:last-child{
-                        margin-right: 0px !important;
+                    @include media-breakpoint-up(xl){
+                        margin-right: 40px;
+                        &:last-child{
+                            margin-right: 0px !important;
+                        }
                     }
                     .menu-anchor{
                         color: $white;
+                    }
+                    span{
+                        transform: rotate(45deg);
                     }
                     .menu-a{
                         color: $white;
@@ -42,8 +50,14 @@
                         height: 0px;
                         opacity: 0;
                         visibility: hidden;
+                        @include media-breakpoint-up(xl){
+                            background-color: $white;
+                        }
                         .mega-menu-container{
                             padding: 22px 20px 22px 32px;
+                            @include media-breakpoint-down(xl){
+                                padding: 0px;
+                            }
                             .menu-link-group{
                                 .menu-link-container{
                                     border-top: 1px solid rgba($color: $color-051721, $alpha: 0.16);
@@ -62,6 +76,21 @@
                 }
             }
         }
+        .burger-toggle{
+            .menu-icon{
+                background-color: $color-F9FAF4;
+                height: 35px;
+                width: 35px;
+                margin-right: 5px;
+                .burger-menu{
+                    height: 11px;
+                }
+                .close{
+                    display: none;
+                    height: 15px;
+                }
+            }
+        }
         .header-icon{
             height: 44px;
             width: 44px;
@@ -69,6 +98,17 @@
             margin-right: 13px;
             &:last-child{
                 margin-right: 0px;
+            }
+            .white-icon{
+                height: 17px;
+            }
+            @include media-breakpoint-down(xl){
+                height: 35px;
+                width: 35px;
+                margin-right: 5px;
+                .white-icon{
+                    height: 15px;
+                }
             }
         }
     }
@@ -96,7 +136,8 @@
             }
         }
     }
-    &.dark-header{
+    &.dark-header,
+    &.res-header-active{
         .header-section{
             .header-logo{
                 height: 24px;
@@ -116,11 +157,49 @@
                     }
                 }
             }
-
+            .burger-toggle{
+                .menu-icon{
+                    background-color: $color-051721;
+                     img{
+                        filter: invert(1);
+                    }
+                }
+            }
             .header-icon{
                 background-color: $color-051721;
                 img{
                     filter: invert(1);
+                }
+            }
+        }
+    }
+    &.res-header-active{
+        background-color: $white;
+        height: 100vh;
+        overflow: auto;
+        .nav{
+            @include media-breakpoint-down(xl){
+                .navigation{
+                    margin-top: 125px;
+                    .menu-item{
+                            margin-bottom: 35px;
+                        .menu-anchor{
+                                font-size: $res-font24;
+                                line-height: $leading35;
+                        }
+                    }
+                }
+            }
+        }
+        .burger-toggle{
+            .menu-icon{
+                .burger-menu{
+                    display: none;
+                }
+                .close{
+                    filter: invert(0) !important;
+                    display: block;
+                    height: 13px;
                 }
             }
         }
@@ -138,6 +217,20 @@
     }
     &.header-fixed.dark-header {
         background-color: $color-F9FAF4;
+    }
+}
+
+.search-header{
+    .search-logo{
+        height: 25px;
+    }
+    .header-icon-bg{
+        height: 44px;
+        width: 44px;
+        background-color: $color-F9FAF4;
+        .header-icon-img{
+            height: 18px;
+        }
     }
 }
 

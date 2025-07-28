@@ -258,6 +258,9 @@
 
 @include media-breakpoint-down(lg) {
     /* Font Sizes */
+    .res-font12 {
+        font-size: $font12;
+    }
     .res-font14 {
         font-size: $font14;
     }
@@ -305,6 +308,17 @@
     .res-font63 {
         font-size: $font63;
     }
+
+    .res-font24{
+        font-size: $res-font24;
+    }
+    .res-font30{
+        font-size: $res-font30;
+    }
+    .res-font35{
+        font-size: $res-font35;
+    }
+
 
     /* Line Heights */
     .res-leading17 {
@@ -375,6 +389,15 @@
     .res-space-0_63 {
         letter-spacing: $space-0_63;
     }
+    .res-space0_15 {
+        letter-spacing: $res-space0_15;
+    }
+    .res-space-0_12 {
+        letter-spacing: $res-space-0_12;
+    }
+    .res-space-0_35 {
+        letter-spacing: $res-space-0_35;
+    }
 
     /* Border Radius */
     .res-radius7 {
@@ -399,6 +422,10 @@
 
     .res-radius60 {
         border-radius: $radius60;
+    }
+
+    .res-radius15 {
+        border-radius: $res-radius15;
     }
 
 }

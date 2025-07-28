@@ -12,5 +12,8 @@
     }
     .programme-open-img{
         height: 475px;
+        @include media-breakpoint-down(lg){
+            height: 265px;
+        }
     }
 }

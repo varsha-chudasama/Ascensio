@@ -4,8 +4,8 @@
   padding-right: 62px;
 
   @include media-breakpoint-down(lg) {
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -63,6 +63,11 @@
   &>* {
       padding-left: 6px !important;
       padding-right: 6px !important;
+  }
+}
+@include media-breakpoint-down(xl) {
+  .header-res-w-100{
+    width: 100% !important;
   }
 }
 @include media-breakpoint-down(lg) {

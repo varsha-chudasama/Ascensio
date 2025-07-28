@@ -1,11 +1,17 @@
 .home-hero-section{
     .home-hero-image{
         height: 535px;
+        @include media-breakpoint-down(lg){
+            height: 275px;
+        }
     }
 }
 
 .sub-hero-section{
     height: 481px;
+    @include media-breakpoint-down(lg){
+        height: 424px;
+    }
 }
 
 .logo-slider-section{
@@ -19,6 +25,9 @@
 .left-right-section{
     .left-image{
         height: 541px;
+        @include media-breakpoint-down(lg){
+            height: 345px;
+        }
     }
     .watch-btn{
         padding: 9px 30px;
@@ -33,19 +42,33 @@
         height: 595px;
         width: 427px;
         transform: translateY(140px);
+        @include media-breakpoint-down(lg){
+            height: 330px;
+            width: 240px;
+            transform: translateY(56px);
+        }
     }
 }
 
 .testimonial-banner-slider-section{
-    height: 625px;
+    @include media-breakpoint-up(lg){
+        height: 625px;
+    }
     .testimonial-controls{
         .testimonial-prev-arrow{
             margin-right: 15px;
+            @include media-breakpoint-down(lg){
+                margin-right: 10px;
+            }
         }
         .testimonial-prev-arrow,
         .testimonial-next-arrow{
             height: 50px;
             width: 50px;
+            @include media-breakpoint-down(lg){
+                height: 36px;
+                width: 36px;
+            }
         }
     }
 }

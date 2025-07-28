@@ -2,6 +2,7 @@ export class Header {
     init() {
         this.HeaderFixed();
         this.MegaMenuactive();
+        this.BurgerMenu();
     }
      HeaderFixed() {
         // header fixed js
@@ -54,6 +55,31 @@ export class Header {
                 $body.addClass('header-active-bg overflow-hidden');
                 $html.addClass('overflow-hidden');
                 }
+            }
+        });
+    }
+
+    BurgerMenu(){
+        $('.burger-toggle').click(function () {
+            const isActive = $(this).hasClass('activate');
+
+            if (!isActive) {
+                // Open the burger menu
+                $(this).addClass('activate');
+                $('.header').addClass('res-header-active');
+                $('.nav').removeClass('d-none');
+                $('body').addClass('overflow-hidden');
+                $('html').addClass('overflow-hidden');
+            } else {
+                // Close the burger menu
+                $(this).removeClass('activate');
+                $('.header').removeClass('res-header-active');
+                $('.nav').addClass('d-none');
+                $('body').removeClass('overflow-hidden');
+                $('html').removeClass('overflow-hidden');
+                $('body').removeClass('header-active-bg');
+                $('.header').removeClass('header-active');
+                $('.menu-item').removeClass('menu-active');
             }
         });
     }

@@ -1,6 +1,7 @@
 .logo-slider,
 .master-card-slider,
-.left-right-slider{
+.left-right-slider,
+.testimonial-slider{
     .slick-list{
         overflow: visible !important;
     }
@@ -20,11 +21,20 @@
     }
 }
 .left-right-slider{
-    width: calc(35% + 58vw) !important;
+    @include media-breakpoint-up(lg){
+        width: calc(35% + 58vw) !important;
+        overflow: hidden;
+    }
+    @include media-breakpoint-down(lg){
+        .slick-list{
+            overflow: visible !important;
+        }
+    }
 }
 .master-card-slider,
 .pairs-well-slider,
-.left-right-slider{
+.left-right-slider,
+.testimonial-slider{
     .slick-list{
         margin-left: -8px;
         margin-right: -8px;

@@ -6,6 +6,9 @@
     }
     .footer-logo{
         height: 115px;
+        @include media-breakpoint-down(lg){
+            height: 52px;
+        }
     }
     .footer-link{
         &:last-child{
