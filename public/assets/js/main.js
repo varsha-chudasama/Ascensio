@@ -33148,7 +33148,7 @@ var Header = /*#__PURE__*/function () {
       // header fixed js
       var prevScrollPos = window.pageYOffset || document.documentElement.scrollTop;
       $(window).scroll(function () {
-        var sticky = $(".header"),
+        var sticky = $(".header , .search-header"),
           scroll = $(window).scrollTop();
         if (scroll >= 50) {
           sticky.addClass("header-fixed");
@@ -33159,9 +33159,9 @@ var Header = /*#__PURE__*/function () {
         }
         var currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
         if (prevScrollPos > currentScrollPos || currentScrollPos === 0) {
-          $(".header").removeClass("hidden");
+          $(".header , .search-header").removeClass("hidden");
         } else {
-          $(".header").addClass("hidden");
+          $(".header, .search-header").addClass("hidden");
         }
         prevScrollPos = currentScrollPos;
       });
